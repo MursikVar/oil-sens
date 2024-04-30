@@ -1,0 +1,15 @@
+html,body{
+    color: #FFFFFF;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.conteiner{
+    max-width: 1314px;
+    /* min-width: 1314px; */
+    margin: 0 auto;
+    height: 100%;
+}
