@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
 html,body{
-    color: #FFFFFF;
+    font-family: roboto, sans-serif;
+    color: #000;
+    line-height: 150%;
+    background-color: #F0F0F0; 
 }
 
 .wrapper{
@@ -12,4 +18,67 @@ html,body{
     /* min-width: 1314px; */
     margin: 0 auto;
     height: 100%;
+}
+
+.button {
+    align-items: center;
+    background: rgba(236, 184, 87, 0.7);
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.button:hover{
+    background: linear-gradient(135deg, #461783 0%, #ef7e7e 100%); 
+    color: #FFFFFF;
+}
+/* .logo {
+} */
+
+/*===========================================================*/
+.header{
+    font-weight: 700;
+    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(20px);
+}
+.header__top { /*подумать над структорой шапки*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+.header__top-inner {
+}
+.header__logo {
+}
+.header__nav {
+    display: flex;
+}
+.header__nav-list {
+    display: flex;
+    padding: 10px 0 0;
+}
+.header__nav-item {
+    margin-right: 40px;
+    transition: all .5s;
+}
+.header__nav-item:hover {
+    color:#EF7E7E; 
+}
+.header__nav-item:last-child{
+    margin-right: 250px;
+}
+.header__nav-link {
+    /* font-weight: 400; */
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.header__nav-btn {
 }
