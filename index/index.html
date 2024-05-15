@@ -39,64 +39,138 @@
                 </div>
             </div>
         </header>
-        <div class="line_of_separation"></div>
+        <div class="line_of_separation"></div> <!-- разделительная черта -->
         <main class="main">
-            <section class="specifications">
+            <sect ion class="specifications">
                 <div class="conteiner">
                     <div class="specifications__inner">
                         <div class="specifications__inner-img">
-                            <!-- !!!!!!!!!!!сделать гифку и вставить сюда!!!!!!!!!!!! -->
+                            <!-- в качестве заглушки временно установил фотку, она будет использован в слайдере -->
+                            <img src="img/preview_3.png" alt="animation">
                         </div>
                         <div class="specifications__inner-indicators">
-                            <h3 class="specifications__inner-title">Характеристики  уровнемера RTDR LM</h3>
-                            <ul class="specifications__inner-values">
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Погрешность:</span>
-                                    <span class="specifications__inner-value">±1 мм</span>
+                            <div class="specifications__inner-title">
+                                <h3>Характеристики  уровнемера RTDR LM</h3>
+                            </div>
+                            <div class="specifications__inner-items">
+                                <ul class="specifications__inner-name">
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Погрешность:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Дискретность:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Количество уровней:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Интерфейс передачи:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>ε измеряемой среды:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Степень защиты:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Параметры среды:</p>
+                                    </li>
+                                    <li class="specifications__name-item">
+                                        <div class="specifications__inner-trait"></div>
+                                        <p>Температурный диапазон:</p>
+                                    </li>
+                                </ul>
+                                <ul class="specifications__inner-value">
+                                    <li class="specifications__value-item">
+                                        <p>±1 мм</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>1 мм</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>2 и более</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>4-20 мА, HART,LoRa</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>1,6...81</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>IP67</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>88 атм., до 250°</p>
+                                    </li>
+                                    <li class="specifications__value-item">
+                                        <p>-40...+50°</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="specifications__advantages">
+                        <div class="specifications__advantages-inner">
+                            <ul class="specifications__card">
+                                <li class="specifications__card-item">
+                                    <button class="specifications__card-btn" type="button" data-filter=".accuracy">
+                                        <img class="specifications__card-img specifications__card-img--active" src="img/svg/specifications_accuracy.svg" alt="accuracy"> 
+                                        Точность
+                                    </button>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Дискретность:</span>
-                                    <span class="specifications__inner-value">1 мм</span>
+                                <div class="specifications__card-trait"></div>
+                                <li class="specifications__card-item">
+                                    <button class="specifications__card-btn" type="button" data-filter=".adaptability">
+                                        <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
+                                        Адаптивность
+                                    </button>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Количество уровней:</span>
-                                    <span class="specifications__inner-value">2 и более</span>
+                                <div class="specifications__card-trait"></div>
+                                <li class="specifications__card-item">
+                                    <button class="specifications__card-btn" type="button" data-filter=".analysis">
+                                        <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
+                                        Анализ
+                                    </button>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Интерфейс передачи:</span>
-                                    <span class="specifications__inner-value">4-20 мА, HART,LoRa</span>
+                                <div class="specifications__card-trait"></div>
+                                <li class="specifications__card-item">
+                                    <button class="specifications__card-btn" type="button" data-filter=".functional">
+                                        <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
+                                        Функционал
+                                    </button>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">ε измеряемой среды:</span>
-                                    <span class="specifications__inner-value">1,6...81</span>
+                            </ul>
+                        </div>
+                        <div class="specifications__advantages-info">
+                            <ul class="specifications__info">
+                                <li class="specifications__info-items specifications__info-items--accuracy" data-order="1">
+                                    <p>Повышение точности измерения за счет автоматического измерения актуальной диэлектрической проницаемости жидкостей</p>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Степень защиты:</span>
-                                    <span class="specifications__inner-value">IP67</span>
+                                <li class="specifications__info-items specifications__info-items--adaptability" data-order="2">
+                                    <p>Не требует предварительной настройки и калибровки на среду. Система автоматически определит   параметры измеряемых сред</p>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Параметры среды:</span>
-                                    <span class="specifications__inner-value">88 атм., до 250°</span>
+                                <li class="specifications__info-items specifications__info-items--analysis" data-order="3">
+                                    <p>Автоматический анализ измеряемой среды, определение количества веществ (слоёв) в резервуаре и их параметров</p>
                                 </li>
-                                <li class="specifications__inner-item">
-                                    <div class="specifications__inner-trait"></div>
-                                    <span class="specifications__inner-name">Температурный диапазон:</span>
-                                    <span class="specifications__inner-value">-40...+50°</span>
+                                <li class="specifications__info-items specifications__info-items--functional" data-order="4">
+                                    <p>Функционал уровнемера позволяет не использовать дополнительные технические устройтва  и сократить работу персонала на перенастройку оборудования </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="specifications__advantages"></div>
                 </div>
-            </section>
+            </sect>
         </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

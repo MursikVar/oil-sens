@@ -89,3 +89,92 @@ html,body{
 }
 
 /*========================HEADER__BODY========================*/
+
+
+
+/*========================SPECIFICATIONS__INNER========================*/
+.specifications__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.specifications__inner-img{
+    margin-top: 30px;
+}
+.specifications__inner-indicators {
+    margin-top: 90px;
+}
+.specifications__inner-title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.specifications__inner-items {
+    display: flex;
+}
+.specifications__inner-name {
+    margin-right: 90px;
+}
+.specifications__name-item {
+    margin-bottom: 30px; /*Посмотреть в общей сборке, мб поменять на 20px*/
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.specifications__inner-trait {
+    background: #000;
+    opacity: .7;
+    width: 19px;
+    height: 2px;
+    margin-right: 15px;
+}
+.specifications__inner-value {
+}
+.specifications__value-item{
+    margin-bottom: 30px; /*Посмотреть в общей сборке, мб поменять на 20px*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #6048A6;
+}
+.specifications__name-item:last-child{
+    margin-bottom: 0;
+}
+.specifications__value-item:last-child{
+    margin-bottom: 0;
+}
+/*========================SPECIFICATIONS__BODY========================*/
+.specifications__advantages-inner {
+    margin-top: 60px;
+}
+.specifications__card {
+    display: flex;
+    justify-content: space-between;
+}
+.specifications__card-item {
+}
+.specifications__card-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.specifications__card-img {
+    margin-right: 30px;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px #ECB857;
+    background: #fff;
+}
+.specifications__card-img--active {
+    box-shadow: 0 0 4px 0 #000;
+    background: rgba(236, 184, 87, 0.8);
+}
+.specifications__card-trait {
+    background: #000;
+    opacity: .7;
+    width: 2px;
+    height: 60px;
+}
