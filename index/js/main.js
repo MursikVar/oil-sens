@@ -1,10 +1,26 @@
-console.log("скрипт подключен")
-// $(function()
-// {
-//     let mixer = mixitup('.directions__list');
+$(function(){
+console.log("скрипт подключен111")
 
-//     $('.specifications__card-btn').on('click', function () {
-//         $('.specifications__card-btn').removeClass('specifications__card-img--active')
-//         $(this).addClass('specifications__card-img--active')
-//     })
-// })
+
+// код для смены текста в разделе преимущества
+    $(document).ready(function(){
+        // По умолчанию устанавливаем стиль активной кнопки и показываем первый блок
+        $(".specifications__card-btn[data-target='block-1']").addClass(".specifications__card-img--active");
+        $("#block-1").show();
+
+        // Обработчик клика по кнопкам
+        $(".specifications__card-btn").click(function(){
+            let target = $(this).data("target");
+            
+            // Скрываем все блоки
+            $(".specifications__info-items").hide();
+            
+            // Показываем выбранный блок
+            $("#" + target).show();
+            
+            // Убираем стиль активной кнопки у всех кнопок и добавляем его только к текущей
+            $(".specifications__card-btn").removeClass(".specifications__card-img--active");
+            $(this).addClass(".specifications__card-img--active");
+        });
+    });
+})

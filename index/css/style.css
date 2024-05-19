@@ -169,6 +169,10 @@ html,body{
     background: #fff;
 }
 .specifications__card-img--active {
+    margin-right: 30px;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 15px;
     box-shadow: 0 0 4px 0 #000;
     background: rgba(236, 184, 87, 0.8);
 }
@@ -178,3 +182,18 @@ html,body{
     width: 2px;
     height: 60px;
 }
+/*===============SPECIFICATIONS__CARD=====*/
+.specifications__advantages-info {
+    margin:  60px 0;
+}
+.specifications__info {
+}
+.specifications__info-items {
+    width: 100%;
+    display: none;
+}
+.specifications__info-text {
+    font-size: 20px;
+}
+
+

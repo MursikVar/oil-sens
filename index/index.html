@@ -41,7 +41,7 @@
         </header>
         <div class="line_of_separation"></div> <!-- разделительная черта -->
         <main class="main">
-            <sect ion class="specifications">
+            <section class="specifications">
                 <div class="conteiner">
                     <div class="specifications__inner">
                         <div class="specifications__inner-img">
@@ -120,28 +120,28 @@
                         <div class="specifications__advantages-inner">
                             <ul class="specifications__card">
                                 <li class="specifications__card-item">
-                                    <button class="specifications__card-btn" type="button" data-filter=".accuracy">
-                                        <img class="specifications__card-img specifications__card-img--active" src="img/svg/specifications_accuracy.svg" alt="accuracy"> 
+                                    <button class="specifications__card-btn" type="button" data-target='block-1'>
+                                        <img class="specifications__card-img specifications__card-img--active" src="img/svg/specifications_accuracy.svg" alt="accuracy">
                                         Точность
                                     </button>
                                 </li>
                                 <div class="specifications__card-trait"></div>
                                 <li class="specifications__card-item">
-                                    <button class="specifications__card-btn" type="button" data-filter=".adaptability">
+                                    <button class="specifications__card-btn" type="button" data-target='block-2'>
                                         <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
                                         Адаптивность
                                     </button>
                                 </li>
                                 <div class="specifications__card-trait"></div>
                                 <li class="specifications__card-item">
-                                    <button class="specifications__card-btn" type="button" data-filter=".analysis">
+                                    <button class="specifications__card-btn" type="button" data-target='block-3'>
                                         <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
                                         Анализ
                                     </button>
                                 </li>
                                 <div class="specifications__card-trait"></div>
                                 <li class="specifications__card-item">
-                                    <button class="specifications__card-btn" type="button" data-filter=".functional">
+                                    <button class="specifications__card-btn" type="button" data-target='block-4'>
                                         <img class="specifications__card-img" src="img/svg/specifications_accuracy.svg" alt="accuracy"> <!-- Отрисовать и поменять иконки -->
                                         Функционал
                                     </button>
@@ -150,24 +150,26 @@
                         </div>
                         <div class="specifications__advantages-info">
                             <ul class="specifications__info">
-                                <li class="specifications__info-items specifications__info-items--accuracy" data-order="1">
-                                    <p>Повышение точности измерения за счет автоматического измерения актуальной диэлектрической проницаемости жидкостей</p>
+                                <li class="specifications__info-items" id="block-1">
+                                    <p class="specifications__info-text">Повышение точности измерения за счет автоматического измерения актуальной диэлектрической проницаемости жидкостей</p>
                                 </li>
-                                <li class="specifications__info-items specifications__info-items--adaptability" data-order="2">
-                                    <p>Не требует предварительной настройки и калибровки на среду. Система автоматически определит   параметры измеряемых сред</p>
+                                <li class="specifications__info-items" id="block-2">
+                                    <p class="specifications__info-text">Не требует предварительной настройки и калибровки на среду. Система автоматически определит   параметры измеряемых сред</p>
                                 </li>
-                                <li class="specifications__info-items specifications__info-items--analysis" data-order="3">
-                                    <p>Автоматический анализ измеряемой среды, определение количества веществ (слоёв) в резервуаре и их параметров</p>
+                                <li class="specifications__info-items" id="block-3">
+                                    <p class="specifications__info-text">Автоматический анализ измеряемой среды, определение количества веществ (слоёв) в резервуаре и их параметров</p>
                                 </li>
-                                <li class="specifications__info-items specifications__info-items--functional" data-order="4">
-                                    <p>Функционал уровнемера позволяет не использовать дополнительные технические устройтва  и сократить работу персонала на перенастройку оборудования </p>
+                                <li class="specifications__info-items" id="block-4">
+                                    <p class="specifications__info-text">Функционал уровнемера позволяет не использовать дополнительные технические устройтва  и сократить работу персонала на перенастройку оборудования </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </sect>
+            </section>
+            <div class="line_of_separation"></div> 
         </main>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/mixitup.min.js"></script>
