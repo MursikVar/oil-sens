@@ -242,7 +242,7 @@ html,body{
     z-index: -1;
 } */
 .device__inner-info{
-    width:  700px;
+    width:  500px;
     height: 560px;
     background: linear-gradient(135deg, #968dba 0%, #461783 100%);;
 }
@@ -268,7 +268,7 @@ html,body{
     background-color: #C8A35F;
 }
 .device__inner-btn {
-    width: 500px;
+    width: 420px;
 }
 .button {
 }
@@ -276,14 +276,53 @@ html,body{
 
 }
 .device__inner-slider {
-
-    max-width: 700px;
+    max-width: 500px;
 }
 .device__slide {
+
+    background: linear-gradient(135deg, #968dba 0%, #461783 100%);
 }
 .device__slide img {
+    width: 420px;
+    height: 400px;
 }
 .device__arrow {
 }
 .device__prev{    
 }
+
+.device__dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .device__dots li {
+    margin-right: 12px;
+  }
+  
+  .device__dots li:last-child {
+    margin-right: 0;
+  }
+  
+  .device__dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .device__dots button::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #B3B7BC;
+    border-radius: 3px;
+  }
+  
+  .device__dots .slick-active button::before {
+    background-color: #424551;
+    transition: all .3s;
+  }

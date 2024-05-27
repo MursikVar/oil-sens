@@ -26,7 +26,7 @@ $(function(){
 
     $('.device__inner-slider').slick({
         arrows: false, // отключаем дефолтные стрелки
-        dots: true, //Точки под слайдером
+        dots: false, //Точки под слайдером
         appenDots: $('.testimonials__dots')
     })
     $('.device__prev').on('click', function (e) {
